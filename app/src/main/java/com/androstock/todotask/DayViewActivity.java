@@ -221,6 +221,7 @@ public class DayViewActivity extends AppCompatActivity {
                     /* ===== TODAY ========*/
                     Cursor parentlist = mydb.getDataonDate_Parent(date);
                     ParentList.clear();
+                    ChildList.clear();
                     loadDataList(parentlist, ParentList,0);
                     loadListView(taskListParent,ParentList,0);
                     Cursor childlist=mydb.getDataonDate_Child(date);

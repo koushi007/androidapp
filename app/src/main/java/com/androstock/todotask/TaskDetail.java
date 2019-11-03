@@ -196,7 +196,7 @@ public class TaskDetail extends AppCompatActivity {
                 ChildList.clear();
                 Cursor today = mydb.getChildDataSpecificWithParent(Taskname);
                 loadDataList(today, ChildList);
-                final ListTaskAdapter2 adapter = new ListTaskAdapter2(TaskDetail.this, ChildList,position);
+                final ListTaskAdapter3 adapter = new ListTaskAdapter3(TaskDetail.this, ChildList,position);
                 listView.setAdapter(adapter);
 
             }
